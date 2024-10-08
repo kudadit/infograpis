@@ -18,7 +18,15 @@
 body {
     overflow-x: hidden; /* Mencegah horizontal scroll */
 }
-
+iframe {
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.status{
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.status iframe {
+    box-shadow: none; /* Ensure iframes inside status don't inherit the shadow */
+}
 header {
     position: fixed;
     right: 0;
@@ -255,13 +263,6 @@ animation-range: entry 0%  ;
 animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0% cover ;
-}
-.fotoage {
-animation: appear linear;
-animation-timeline: view();
-animation-range: entry 0% cover ;
-height: 200px !important;
-width: 300px !important;
 }
 .explain h2 {
     font-size: 50px;
