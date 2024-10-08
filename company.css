@@ -21,10 +21,11 @@ body {
 iframe {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
-.status{
+
+.statuss{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
-.status iframe {
+.statuss iframe {
     box-shadow: none; /* Ensure iframes inside status don't inherit the shadow */
 }
 header {
@@ -437,7 +438,7 @@ animation-range: entry 0%  ;
 /* Adjust the font-size and alignment of the h3 */
 .typed-h3 {
     display: inline-block;
-    font-size: 50px;
+    font-size: 90px;
     color: var(--biru);
     vertical-align: middle; /* Align the text with the cursor */
     line-height: 1; /* Ensures consistent vertical alignment */

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Seymour+One&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: #ffff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+}
+
+.logo img {
+    height: 40px; 
+    padding-left: 7px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: rgb(180, 179, 179);
+    text-decoration: none;
+    padding: 5px 30px; /* Tambahkan padding yang lebih besar untuk membuat background lebih besar */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Pastikan elemen mengambil hanya ukuran konten */
+    
+}
+
+.nav a:hover {
+    background-color: #f83f3f; 
+    color: #ffff;
+}
+
+.nav a.active {
+    background-color: #fb2929; 
+    color: #ffff;
+}
+
+
+/* .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: -500px; 
+    padding-left: -200px;
+} 
+
+.search-bar input[type="text"] {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: #f83f3f; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #8b0000; 
+} */
+
+h1 {
+    margin: 30px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-top: 20px;
+    text-align: left; /* Pusatkan teks h1 */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+
+/* Styling untuk video */
+video {
+    margin-right: 50px; /* Mengatur jarak antara video dan tulisan */
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 150px
+}
+
+/* Styling untuk deskripsi */
+.deskripsi {
+    line-height: 1.5;
+    font-size: 17px;
+    text-align: left; /* Align left untuk paragraf */
+    margin-bottom: 100px; /* Jarak bawah untuk deskripsi */
+    margin-left: 10px;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px;
+}
+
+.num-list {
+    list-style-type: decimal;
+    justify-content: center;
+    line-height: 1.7;
+}
+
+.sub-points {
+    list-style-type: lower-alpha;
+    /* padding-left: 20px;
+    text-indent: -10px; */
+}
+
+.sub-points li {
+    margin-bottom: 5px;
+}
+
+
+
+.button-container {
+    text-align: center; /* Pusatkan tombol */
+    margin-top: 50px;
+    margin-bottom: 50px; /* Tambahkan jarak antara button dan footer */
+}
+
+.button-container .btn-outline-danger {
+    padding-bottom: 10px; /* Mengatur padding bawah tombol */
+    width: 1200px; /* Mengatur panjang tombol */
+    padding-top: 10px; /* Mengatur padding atas tombol jika diperlukan */
+    padding-left: 20px; /* Mengatur padding kiri tombol */
+    padding-right: 20px; /* Mengatur padding kanan tombol */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
