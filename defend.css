@@ -28,6 +28,11 @@ iframe {
 .statuss iframe {
     box-shadow: none; /* Ensure iframes inside status don't inherit the shadow */
 }
+.age {
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3) ;
+    
+}
+
 header {
     position: fixed;
     right: 0;
