@@ -28,6 +28,15 @@ iframe {
 .statuss iframe {
     box-shadow: none; /* Ensure iframes inside status don't inherit the shadow */
 }
+.status {
+    max-width: 1100px; /* Set a maximum width for the content */
+    padding: 200px; /* Add padding to give space between the content and the edges */
+    margin: 0 auto; /* Center the .status container */
+    text-align: center; /* Center the text or content inside the .status class */
+}
+
+
+
 header {
     position: fixed;
     right: 0;
@@ -170,10 +179,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Space between gender, diagram, and difabel sections */
+    gap: 100px; /* Space between gender, diagram, and difabel sections */
     padding-left: 40px; /* Add padding to shift the whole content to the right */
 }
+.position-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Wrap the images if needed for smaller screens */
+}
 
+.position-container img {
+    margin: 0 auto;
+}
+
+/* Ensure the heading is centered */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .gender-container {
     display: flex;
     flex-direction: column;
@@ -250,7 +276,7 @@ animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0%  ;
 }
-.gender-icon {
+.statuss {
 animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0%  ;

@@ -32,6 +32,12 @@ iframe {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3) ;
     
 }
+.status {
+    max-width: 1100px; /* Set a maximum width for the content */
+    padding: 200px; /* Add padding to give space between the content and the edges */
+    margin: 0 auto; /* Center the .status container */
+    text-align: center; /* Center the text or content inside the .status class */
+}
 
 header {
     position: fixed;
@@ -157,17 +163,17 @@ header {
         scale: 1;
     }
 }
-.status {
+.statuss {
     padding: 20px;
     text-align: center;
 }
 
-.status {
+.statuss {
     padding: 20px;
     text-align: center;
 }
 
-.status {
+.statuss {
     padding: 20px;
     text-align: center;
 }
@@ -176,10 +182,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Space between gender, diagram, and difabel sections */
+    gap: 100px; /* Space between gender, diagram, and difabel sections */
     padding-left: 40px; /* Add padding to shift the whole content to the right */
 }
+.position-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Wrap the images if needed for smaller screens */
+}
 
+.position-container img {
+    margin: 0 auto;
+}
+
+/* Ensure the heading is centered */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .gender-container {
     display: flex;
     flex-direction: column;
@@ -187,6 +210,14 @@ header {
     position: relative;
     gap: 10px;
     margin-left: 40px; /* Shift the gender container towards the center */
+}
+.gender-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    margin-left: 160px; /* Shift the gender container towards the center */
 }
 
 .gender-icon {
@@ -256,7 +287,7 @@ animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0%  ;
 }
-.gender-icon {
+.statuss {
 animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0%  ;
@@ -349,8 +380,6 @@ animation-range: entry 0% cover ;
 .foot h2{
     color: whitesmoke;
 }
-
-
 
 
 .box-container {
@@ -457,4 +486,3 @@ animation-range: entry 0%  ;
         opacity: 0;
     }
 }
-
