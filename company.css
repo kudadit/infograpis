@@ -22,6 +22,29 @@ iframe {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.job-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    background-image: url(media/statusss.png);
+    background-size: cover;
+    gap: 5px; /* Jarak antar elemen job-item kecil */
+}
+
+.job-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px; /* Jarak antar item juga diatur lebih kecil */
+}
+
+
+.job-item h2 {
+    margin-bottom: 10px; /* Menambah sedikit jarak antara teks dan gambar */
+}
 .statuss{
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -52,18 +75,26 @@ header {
 }
 
 .heder li {
-    position: relative; /* Make each list item a positioning context */
+    position: relative;
     list-style: none;
+    margin-left: 60px; /* Add this to ensure space between each list item */
 }
 
+.heder li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
+.child {
+    width: 50px;
+    height: 42px;
+  }
 .heder a {
     color: var(--hitam);
-    margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all 0.55s ease;
 }
+
 
 .heder a:hover {
     border-bottom: 2px solid var(--merahsc);
@@ -120,7 +151,7 @@ header {
 .explain {
     margin-top: 50px; 
     padding: 0;
-    min-height: 100vh;
+    min-height: 10vh;
     background-image: url('/media/background 3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +167,10 @@ header {
 
 .explain-content{
     background: rgba(30, 29, 29, 0.7); 
-    padding: 250px;
+    padding-top: 200px;
+    padding-left: 232px;
+    padding-right: 232px;
+    padding-bottom: 150px;
     border-radius: cover; 
     text-align: center;
 }
@@ -165,6 +199,14 @@ header {
     padding: 20px;
     text-align: center;
 }
+
+.statuss {
+    padding: 20px;
+    text-align: center;
+    background-image: url(media/statusss.png);
+    background-size: cover;
+}
+
 
 .employee-container {
     display: flex;
@@ -290,6 +332,11 @@ animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0% cover ;
 }
+.job-age {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%  ;
+    }
 .explain h2 {
     font-size: 50px;
     color: whitesmoke;
@@ -321,7 +368,7 @@ animation-range: entry 0% cover ;
 
 .pkwtt {
     margin: 20px auto;
-    width: 600px;
+    width: 500px;
     height: 450px;
     
 }
@@ -436,7 +483,7 @@ animation-range: entry 0%  ;
     justify-content: center; /* This centers content vertically */
     text-align: center;
     color: whitesmoke;
-    height: calc(100vh - 60px); /* Ensures the section takes full height */
+    height: calc(70vh - 60px); /* Ensures the section takes full height */
     padding: 20px; /* Optional padding if needed */
 }
 .total-page h1{

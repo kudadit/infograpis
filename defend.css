@@ -17,9 +17,35 @@
 
 body {
     overflow-x: hidden; 
+    
 }
+
 iframe {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.job-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    gap: 5px; /* Jarak antar elemen job-item kecil */
+    background-image: url(media/statusss.png);
+    background-size: cover;
+    
+}
+
+.job-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px; /* Jarak antar item juga diatur lebih kecil */
+}
+
+
+.job-item h2 {
+    margin-bottom: 10px; /* Menambah sedikit jarak antara teks dan gambar */
 }
 
 .statuss{
@@ -31,12 +57,6 @@ iframe {
 .age {
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3) ;
     
-}
-.status {
-    max-width: 1100px; /* Set a maximum width for the content */
-    padding: 200px; /* Add padding to give space between the content and the edges */
-    margin: 0 auto; /* Center the .status container */
-    text-align: center; /* Center the text or content inside the .status class */
 }
 
 header {
@@ -63,22 +83,30 @@ header {
 }
 
 .heder li {
-    position: relative; /* Make each list item a positioning context */
+    position: relative;
     list-style: none;
+    margin-left: 60px; /* Tambahkan jarak antar item */
 }
+
+.heder li:first-child {
+    margin-left: 0; /* Hapus margin kiri dari item pertama */
+}
+.child {
+    width: 50px;
+    height: 42px;
+  }
 
 .heder a {
     color: var(--hitam);
-    margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
+    transition: all 0.3s ease-in-out; /* Tambahkan transisi yang lebih halus */
 }
 
 .heder a:hover {
-    border-bottom: 2px solid var(--merahsc);
-    transform: scale(1.05);
+    border-bottom: 2px solid var(--merahsc); /* Warna underline merah saat hover */
+    transform: scale(1.05); /* Sedikit perbesar item saat hover */
 }
 
 .dropdown {
@@ -90,6 +118,7 @@ header {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Transisi smooth saat dropdown muncul */
 }
 
 .years:hover .dropdown {
@@ -104,21 +133,23 @@ header {
 
 .dropdown ul li {
     padding: 10px;
-    text-align: center; /* Center the text */
+    text-align: center;
+    transition: background-color 0.3s ease-in-out; /* Transisi smooth saat hover */
 }
 
 .dropdown ul li:hover {
-    background-color: var(--merahsc); /* Change background color of hovered year */
+    background-color: var(--merahsc); /* Ganti warna background saat hover */
 }
 
 .dropdown ul li a {
     color: var(--hitam);
     text-decoration: none;
     display: block;
+    transition: color 0.3s ease-in-out; /* Transisi warna teks */
 }
 
 .dropdown ul li:hover a {
-    color: whitesmoke; /* Change text color on hover */
+    color: whitesmoke; /* Ganti warna teks saat hover */
 }
 
 .fas {
@@ -132,8 +163,8 @@ header {
 .explain {
     margin-top: 50px; 
     padding: 0;
-    min-height: 100vh;
-    background-image: url('/media/background.jpg');
+    min-height: 10vh;
+    background-image: url('/media/background\ 7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,8 +178,11 @@ header {
 }
 
 .explain-content{
-    background: rgba(30, 29, 29, 0.7); 
-    padding: 250px;
+    /* background: rgba(30, 29, 29, 0.7);  */
+    padding-top: 200px;
+    padding-left: 232px;
+    padding-right: 232px;
+    padding-bottom: 150px;
     border-radius: cover; 
     text-align: center;
 }
@@ -176,6 +210,8 @@ header {
 .statuss {
     padding: 20px;
     text-align: center;
+    background-image: url(media/statusss.png);
+    background-size: cover;
 }
 
 .employee-container {
@@ -302,6 +338,12 @@ animation: appear linear;
 animation-timeline: view();
 animation-range: entry 0% cover ;
 }
+
+.job-age {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0%  ;
+    }
 .explain h2 {
     font-size: 50px;
     color: whitesmoke;
@@ -333,7 +375,7 @@ animation-range: entry 0% cover ;
 
 .pkwtt {
     margin: 20px auto;
-    width: 600px;
+    width: 500px;
     height: 450px;
     
 }
@@ -441,14 +483,14 @@ animation-range: entry 0%  ;
 .total-page {
     background: linear-gradient(245.59deg, #DA0000 28.53%, #3B3B3B 90.52%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* This centers content vertically */
     text-align: center;
     color: whitesmoke;
-    height: calc(100vh - 60px); /* Ensures the section takes full height */
+    height: calc(70vh - 60px); /* Ensures the section takes full height */
     padding: 20px; /* Optional padding if needed */
 }
 .total-page h1{
