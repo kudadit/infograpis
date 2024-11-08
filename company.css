@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Seymour+One&display=swap');
+
+
 * {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -75,26 +78,18 @@ header {
 }
 
 .heder li {
-    position: relative;
+    position: relative; /* Make each list item a positioning context */
     list-style: none;
-    margin-left: 60px; /* Add this to ensure space between each list item */
 }
 
-.heder li:first-child {
-    margin-left: 0; /* Remove margin from the first list item */
-}
-.child {
-    width: 50px;
-    height: 42px;
-  }
 .heder a {
     color: var(--hitam);
+    margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all 0.55s ease;
 }
-
 
 .heder a:hover {
     border-bottom: 2px solid var(--merahsc);
@@ -146,6 +141,7 @@ header {
     margin-left: 10px;
     padding-top: 3px;
 }
+
 
 
 .explain {
@@ -258,8 +254,17 @@ h2 {
 /* Position the percentage texts */
 .boys-text {
     position: absolute;
-    top: -20px;
+    top: -60px;
     right: -50px;
+    color: #0188e0;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.boys-textnum {
+    position: absolute;
+    top: -10px;
+    right: -67px;
     color: #0188e0;
     font-size: 24px;
     font-weight: bold;
@@ -268,8 +273,17 @@ h2 {
 
 .girls-text {
     position: absolute;
-    bottom: -22px;
-    left: -30px;
+    bottom: -5px;
+    left: -20px;
+    color: #ff0063;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.girls-textnum {
+    position: absolute;
+    bottom: 43px;
+    left: -39px;
     color: #ff0063;
     font-size: 24px;
     font-weight: bold;
