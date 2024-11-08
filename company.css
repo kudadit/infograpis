@@ -314,11 +314,16 @@ h2 {
     text-align: center;
 }
 
-.fisik-icon, .sensorik-icon {
+.fisik-icon {
     width: 100px;
     height: auto;
 }
 
+.sensorik-icon {
+    width: 155px;
+    height: auto;
+    padding-bottom: 100px;
+}
 
 
 .pkwtt {
